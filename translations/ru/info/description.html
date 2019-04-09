@@ -1,0 +1,60 @@
+<!-- Describe task in general -->
+
+<p>
+    Вы решили достаточно задач и пришло время немного отдохнуть. Давайте сыграем партию в Scrabble?<br>    
+    У вас есть список слов и ваша задача - определить самое ценное из них. То, которое принесет больше всего очков.<br>
+    Правила:<br>
+    Каждое слово имеет ценность, которая эквивалентна сумме очков всех букв, входящих в него.<br>
+    Стоимость букв следующая:<br>
+    e, a, i, o, n, r, t, l, s, u = 1<br>
+    d, g = 2<br>
+    b, c, m, p = 3<br>
+    f, h, v, w, y = 4<br>
+    k = 5<br>
+    j, x = 8<br>
+    q, z = 10<br>
+    Например, ценность слова 'dog' - 5, так как 'd' = 2, 'o' = 1 и 'g' = 2.
+
+</p>
+
+<p style="text-align: center;">
+    <img  title="Worth of words" src="{{MEDIA}}words.png" alt="example" style="max-height: 70px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Входные данные: </strong> Список слов
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> Самое ценное слово
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Пример:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">worthOfWords(['hi', 'quiz', 'bomb', 'president']) == 'quiz'
+worthOfWords(['zero', 'one', 'two', 'three', 'four', 'five']) == 'zero'</pre>
+{% else %}
+<pre class="brush: python">worth_of_words(['hi', 'quiz', 'bomb', 'president']) == 'quiz'
+worth_of_words(['zero', 'one', 'two', 'three', 'four', 'five']) == 'zero'</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    Для анализа текстов.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Предусловия</strong>:<br>
+    2 <= количество слов <= 10<br>
+    во всех словах используются только буквы нижнего регистра
+</p>
