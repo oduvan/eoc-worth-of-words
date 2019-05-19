@@ -5,7 +5,7 @@ const VALUES = {'e': 1,  'a': 1, 'i': 1, 'o': 1, 'n': 1, 'r': 1,
               'v': 4,  'w': 4, 'y': 4, 'k': 5, 'j': 8, 'x': 8,
               'q': 10, 'z': 10};
 
-function worthOfWords(words: string[]): string {
+export function worthOfWords(words: string[]): string {
     // your code here
     return '';
 }
