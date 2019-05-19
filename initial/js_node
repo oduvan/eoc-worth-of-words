@@ -1,21 +1,22 @@
-var VALUES = {'e': 1,  'a': 1, 'i': 1, 'o': 1, 'n': 1, 'r': 1,
+
+const VALUES = {'e': 1,  'a': 1, 'i': 1, 'o': 1, 'n': 1, 'r': 1,
               't': 1,  'l': 1, 's': 1, 'u': 1, 'd': 2, 'g': 2,
               'b': 3,  'c': 3, 'm': 3, 'p': 3, 'f': 4, 'h': 4,
               'v': 4,  'w': 4, 'y': 4, 'k': 5, 'j': 8, 'x': 8,
               'q': 10, 'z': 10};
 
-function worthOfWords(words) {
+function worthOfWords(words: string[]): string {
     // your code here
-    return words;
+    return '';
 }
 
-var assert = require('assert');
-if (!global.is_checking) {
-    console.log('Example:')
-    console.log(worthOfWords(['hi', 'quiz', 'bomb', 'president']))
+import * as assert from 'assert';
 
-    // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(worthOfWords(['hi', 'quiz', 'bomb', 'president']), 'quiz')
-    assert.equal(worthOfWords(['zero', 'one', 'two', 'three', 'four', 'five']), 'zero')
-    console.log("Coding complete? Click 'Check' to earn cool rewards!");
-}
+console.log('Example:')
+console.log(worthOfWords(['hi', 'quiz', 'bomb', 'president']))
+
+// These "asserts" are used for self-checking and not for an auto-testing
+assert.equal(worthOfWords(['hi', 'quiz', 'bomb', 'president']), 'quiz')
+assert.equal(worthOfWords(['zero', 'one', 'two', 'three', 'four', 'five']), 'zero')
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
+   
